@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logomusic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+
+    <EditText
+        android:id="@+id/txtUserIdLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="350dp"
+        android:ems="13"
+        android:hint="USER ID"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/txtPasswordLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:ems="13"
+        android:hint="PASSWORD"
+        android:inputType="textPersonName"
+        android:textColor="#F8F7F7"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:background="@color/mycolor"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnRegHome"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtPasswordLogIn"
+        android:layout_marginTop="620dp"
+        android:background="@color/mycolor"
+        android:text="Register"
+
+        android:textColor="#FDFCFC" />
+
+    <Button
+        android:id="@+id/txtAdmin"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="620dp"
+        android:layout_toRightOf="@id/btnRegHome"
+        android:background="@color/mycolor"
+        android:text="ADMIN"
+        android:textColor="#FCFCFC" />
+
+</RelativeLayout>
